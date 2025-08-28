@@ -1,0 +1,18 @@
+.card{
+    border: 1px solid black;
+    position: relative;
+    background-color: rgba(245, 170, 183, 0.36);
+    border-radius: 4%;
+    width: 14rem;
+    height: 17rem;
+    margin: 3rem;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4 ease;
+}
+
+.card:hover{
+    transform: translate(2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
