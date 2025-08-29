@@ -1,0 +1,17 @@
+.btn{
+    height: 35px;
+    position: static;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 3px;
+    border: 2px solid  rgb(252, 145, 163);
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover{
+    background: var(--fondo-cards);
+}
+
+
