@@ -1,24 +1,37 @@
-.card{
+.card {
     border: 1px solid black;
-    position: relative;
     background-color: var(--fondo-cards);
     border-radius: 4%;
     width: 14rem;
     height: 17rem;
     margin: 3rem;
     overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease, box-shadow 0.4 ease;
-}
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 
-.card:hover{
-    transform: translate(0.5px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
-}
-
-.card__buttons{
-    position: relative;
+    /* 👉 Esto es lo importante */
     display: flex;
-    margin:70px 10px;
+    flex-direction: column;
+}
+.card:hover{
+    transform: translate(5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.card__content {
+    flex: 1; /* ocupa todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card__text {
+    flex: 1; /* El texto crece, pero deja espacio para los botones */
+    overflow-y: auto; /* Si el texto es demasiado, agrega scroll interno */
+}
+
+.card__buttons {
+    display: flex;
     justify-content: space-between;
+    margin-top: 10px; /* separa del texto */
 }
